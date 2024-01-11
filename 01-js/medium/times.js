@@ -9,28 +9,21 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    let curr=new Date().getTime();
-    
-    console.log(curr-curr);
-    let sum=0;
+  let curr = new Date().getTime();
 
-    for(let i=0;i<=n;i++)
-  { sum+=i;}
+  console.log(curr - curr);
+  let sum = 0;
 
-    let now1=new Date().getTime();
-     
-   let prev=now1-curr;
-   console.log(prev);
+  for (let i = 0; i <= n; i++) {
+    sum += i;
+  }
 
+  let now1 = new Date().getTime();
 
+  let prev = now1 - curr;
+  console.log(prev);
 
-
-
-
-
-
-    return 0.01;
+  return 0.01;
 }
 
-
-calculateTime(10000000000000000)
+calculateTime(10000000000);
